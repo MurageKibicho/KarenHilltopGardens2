@@ -63,7 +63,7 @@ app.get('/*', (req, res) =>
     var title = "Karen Hilltop Gardens";
     var url = "https://www.fileforma.com/";
     var description = "Custom file formats for internet companies";
-    var author = "Sumaya Nur Adan";
+    var author = "Murage Kibicho";
     var img = "https://www.fileforma.com/DiffusionPNG.jpg";
     var section = "Portfolio";
 
