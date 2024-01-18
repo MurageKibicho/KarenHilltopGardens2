@@ -53,9 +53,10 @@ return(
     <Container>
         <LogoContainer>
          <ContactContainer>
-            <TextContainer>email : fmkandogo@gmail.com</TextContainer>
-            <TextContainer>Phone/Whatsapp : +254721205937</TextContainer>
-            <TextContainer>© 2023 Karen Hilltop Gardens Ltd.</TextContainer>
+            <TextContainer>Phone/Whatsapp : +254757 012 296</TextContainer>
+            <TextContainer>Location: Karen, Nairobi, Kenya. </TextContainer>
+            <TextContainer>Directions : 5 minutes from The Hub Mall, along Dagoretti Road </TextContainer>
+            <TextContainer>© 2024 Karen Hilltop Gardens Ltd.</TextContainer>
 
          </ContactContainer>
         </LogoContainer>
