@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { useLocation } from 'react-router-dom';
 import {useSelector, useDispatch } from 'react-redux';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import Navbar from './Components/Navbar';
 import Content from './Components/Content';
 
@@ -32,7 +32,7 @@ const Details = () => {
     const location = useLocation();
     const currentTime = Date.now();
     const pageDetails = {'path':location.pathname, 'time': currentTime};
-    ReactGA.pageview(pageDetails);
+    ReactGA.send({ hitType: "pageview", page: location.pathname , title: "Home Page Visit" });
 
 return(
     <Container>
