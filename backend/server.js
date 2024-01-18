@@ -64,7 +64,7 @@ app.get('/*', (req, res) =>
     var url = "https://www.karenhilltopgardens.com/";
     var description = "Luxury villas in Karen, Nairobi";
     var author = "Karen Hilltop Gardens ltd";
-    var img = "https://res.cloudinary.com/dcrelr5e7/image/upload/v1705562435/images/14_poc2l0.webp";
+    var img = "https://res.cloudinary.com/dcrelr5e7/image/upload/v1705571365/ezgif-4-cdf81e61b2_vm5j4o.jpg";
     var section = "Portfolio";
 
       
