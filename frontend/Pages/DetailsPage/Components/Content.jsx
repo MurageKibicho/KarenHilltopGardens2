@@ -1,15 +1,16 @@
-import React,{useRef}  from 'react';
+import React, { lazy, Suspense,useRef } from 'react';
+import Skeleton from "react-loading-skeleton";
 import styled from 'styled-components';
 import { useLocation } from 'react-router-dom';
 import {useSelector, useDispatch } from 'react-redux';
-import Price from './Price';
-import ChoiceChips from './ChoiceChips';
-import Overview from './Overview';
-import Facts from './Facts';
-import Maps from './Maps';
-import Footer from './Footer';
+const ChoiceChips = lazy(() => import('./ChoiceChips'));
+const Price = lazy(() => import('./Price'));
+const Overview  = lazy(() => import('./Overview'));
+const Facts  = lazy(() => import('./Facts'));
+const Footer  = lazy(() => import('./Footer'));
+const Maps  = lazy(() => import('./Maps'));
+const ImagePreview2  = lazy(() => import('./ImagePreview2'));
 import { DeviceType } from '../../../responsive';
-import ImagePreview2 from './ImagePreview2';
 
 
 const Container = styled.div`
@@ -108,34 +109,34 @@ const Content = () => {
 return(
     <Container>
         <PreviewContainer>
-            <ImagePreview2/>
+            <Suspense fallback={<Skeleton count={10} />}> <ImagePreview2/> </Suspense>
         </PreviewContainer>
 
         <OuterDiv>
             <EmptyDiv0/>
             <LeftDiv>            
                 <PriceContainer>
-                    <Price footerRef = {footerRef}/>
+                    <Suspense fallback={<Skeleton count={10} />}> <Price footerRef = {footerRef}/> </Suspense>    
                 </PriceContainer>
 
                 <ChoiceChipContainer>
-                    <ChoiceChips/>
+                    <Suspense fallback={<Skeleton count={10} />}> <ChoiceChips/> </Suspense>    
                 </ChoiceChipContainer>
 
                 <OverviewContainer>
-                    <Overview/>
+                    <Suspense fallback={<Skeleton count={10} />}> <Overview/> </Suspense>                        
                 </OverviewContainer>
 
                 <FactsAndFeaturesContainer>
-                    <Facts/>
+                    <Suspense fallback={<Skeleton count={10} />}> <Facts/> </Suspense>                        
                 </FactsAndFeaturesContainer>
 
                 <MapsContainer>
-                    <Maps/>
+                    <Suspense fallback={<Skeleton count={10} />}> <Maps/> </Suspense>                        
                 </MapsContainer>
 
                 <FooterContainer ref={footerRef}>
-                    <Footer/>
+                    <Suspense fallback={<Skeleton count={10} />}> <Footer/> </Suspense>                        
                 </FooterContainer>
             </LeftDiv>
             
