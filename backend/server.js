@@ -61,10 +61,10 @@ app.use(express.static(path.resolve(__dirname, '../', 'dist',)));
 app.get('/*', (req, res) => 
 {
     var title = "Karen Hilltop Gardens";
-    var url = "https://www.fileforma.com/";
-    var description = "Custom file formats for internet companies";
-    var author = "Murage Kibicho";
-    var img = "https://www.fileforma.com/DiffusionPNG.jpg";
+    var url = "https://www.karenhilltopgardens.com/";
+    var description = "Luxury villas in Karen, Nairobi";
+    var author = "Karen Hilltop Gardens ltd";
+    var img = "https://res.cloudinary.com/dcrelr5e7/image/upload/v1705562435/images/14_poc2l0.webp";
     var section = "Portfolio";
 
       
