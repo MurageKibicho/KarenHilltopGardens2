@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { useLocation } from 'react-router-dom';
 import {useSelector, useDispatch } from 'react-redux';
+import ReactGA from 'react-ga';
 import Navbar from './Components/Navbar';
 import Content from './Components/Content';
 
@@ -31,7 +32,7 @@ const Details = () => {
     const location = useLocation();
     const currentTime = Date.now();
     const pageDetails = {'path':location.pathname, 'time': currentTime};
-
+    ReactGA.pageview(pageDetails);
 
 return(
     <Container>

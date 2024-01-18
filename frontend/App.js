@@ -3,8 +3,9 @@ import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 const LazyDetails = lazy(() => import('././Pages/DetailsPage/Details'));
-
+import ReactGA from 'react-ga';
 const App = () => {
+  ReactGA.initialize('G-JBS4WVXKKW');
   return(
     <Router>
       <Routes>

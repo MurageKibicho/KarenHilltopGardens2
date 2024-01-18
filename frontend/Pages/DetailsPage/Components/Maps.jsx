@@ -19,6 +19,7 @@ const markerOptions = {
     label: {
       text: 'Karen Hilltop Gardens',
       color: 'white',
+      
       fontWeight: 'bold',
       fontSize: '15px',
       labelOrigin: labelOrigin,
