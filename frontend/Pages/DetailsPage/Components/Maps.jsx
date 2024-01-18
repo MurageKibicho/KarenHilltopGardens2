@@ -12,23 +12,23 @@ display:block;
 `;
  
 const Maps = () => {
-  
-    const center = useMemo(() => ({ lat: 18.52043, lng: 73.856743 }), []);
-    const dispatch = useDispatch()
-    const location = useLocation();
-    const currentTime = Date.now();
-    const pageDetails = {'path':location.pathname, 'time': currentTime};
-    const url = "https://storage.googleapis.com/maps-solutions-zjo4wzgabi/locator-plus/ol5o/locator-plus.html"
-
+  const apiKey = "AIzaSyASlvKgAbpnyFeCSRYH8xPoDp2UPzWaqYE";
+  const { isLoaded } = useLoadScript({
+    googleMapsApiKey: apiKey
+  });
+  const center = useMemo(() => ({ lat: 18.52043, lng: 73.856743 }), []);
+    
     return(
     <Container>
-        <iframe 
-            src={url}
-            width="100%" 
-            height="100%"
-            frameBorder="0"
-            loading="lazy">
-    </iframe>
+      {!isLoaded ? (
+        <h1>Loading...</h1>
+      ) : (
+        <GoogleMap
+          mapContainerClassName="map-container"
+          center={center}
+          zoom={10}
+        />
+      )}
     </Container>
 )
 }

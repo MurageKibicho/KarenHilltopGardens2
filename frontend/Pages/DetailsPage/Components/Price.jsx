@@ -96,7 +96,7 @@ const Price = (props) => {
       };
 return(
     <Container>
-        <Text0> <span style = {{color:"blue"}}> Ksh 45 000 000 </span> </Text0 >
+        <Text0> <span style = {{color:"blue"}}> USD 300 000 </span> </Text0 >
         <Text0>4 Bedroom House</Text0>
         <Text0>5 baths </Text0 >
         <Text0>0.11 Acres </Text0 >
