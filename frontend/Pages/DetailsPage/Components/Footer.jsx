@@ -9,6 +9,10 @@ const Container = styled.div`
 height: 100%;
 width: 100%;
 display:block;
+@media ${DeviceType.mobileSmall} 
+{
+    font-size: 10px;
+}
 `;
 
  

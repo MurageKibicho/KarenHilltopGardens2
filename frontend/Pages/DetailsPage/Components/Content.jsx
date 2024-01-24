@@ -18,6 +18,10 @@ const Container = styled.div`
 height: 300%;
 width: 100%;
 display:block;
+@media ${DeviceType.mobileSmall} 
+{
+    font-size: 10px;
+}
 `;
 
 const PreviewContainer = styled.div`
@@ -85,19 +89,30 @@ display:block;
 {
     height:50%;
 }
+@media ${DeviceType.mobileSmall} 
+{
+    height:65%;
+}
 
 `;
 const MapsContainer = styled.div`
 height:20%;
 width: 100%;
 display:block;
+@media ${DeviceType.mobileSmall} 
+{
+    height:10%;
+}
 `;
 
 const FooterContainer = styled.div`
 height:8%;
 width: 100%;
 display:block;
-
+@media ${DeviceType.mobileSmall} 
+{
+    height:10%;
+}
 `;
 
  
